@@ -11,8 +11,9 @@
 从最外层目录`cd`至项目中, 即可以直接使用`python manage.py`命令了.
 
 ###2.2 p431项目部署
- - 使用`git push hero master`命令推送到Heroku创建的库中时, 没有添加 Procfile文件,导致推送后出现` code=H14 desc="No web processes running" `错误.  并且使用`heroku ps:scale web=1` 出现 `Couldn't find that formation.`
- 注:
+ 使用`git push hero master`命令推送到Heroku创建的库中时, 没有添加 Procfile文件,导致推送后出现` code=H14 desc="No web processes running" `错误.  并且使用`heroku ps:scale web=1` 出现 `Couldn't find that formation.`
+  
+  注:
  1. [Heroku Error Codes](https://devcenter.heroku.com/articles/error-codes#h14-no-web-dynos-running)
  2. Pracefile作用: 告诉Heroku启动哪些进程, 以便能正确地提哦那个项目提供的服务.
  
