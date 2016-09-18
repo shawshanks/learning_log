@@ -17,3 +17,15 @@
  1. [Heroku Error Codes](https://devcenter.heroku.com/articles/error-codes#h14-no-web-dynos-running)
  2. Pracefile作用: 告诉Heroku启动哪些进程, 以便能正确地提哦那个项目提供的服务.
  
+###2.3 p432添加错误页面之后,对settings.py的设置
+```
+TEMPLATE =[
+    { 
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
+        'APP_DIRS': True,
+        --snip--
+     },
+]
+```
+误将 `learning_log`写为`learning_logs`导致调试不过关. 因为路径错误, 所以Django找不到错误模板的所在地.
