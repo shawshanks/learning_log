@@ -25,7 +25,7 @@ SECRET_KEY = 'b4o)g&-=3-vxz@xz!ol0)57!c!hzbj5nb+_m9i)^+kb_+j-b86'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -132,3 +132,4 @@ if os.getcwd() == '/app':
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
+    DEBUG=False
