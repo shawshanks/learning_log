@@ -38,3 +38,6 @@ TEMPLATE =[
  2. 然后先使用`git push heroku master`将代码提交至heroku.
  3. 然后再使用pycharm将代码提交至github.
  
+##3. 本项目进行过程中遇到的关键性知识.
+###3.1 URL 的反向解析
+####3.1.1 
