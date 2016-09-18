@@ -1,4 +1,6 @@
 # learning_log
+## 注
+最后提交时出现问题,主页一直会出现`内部错误`字样. 之后会进行更改.
 ##1.项目目标 :smiling_imp:
 我们要编写一个名为"学习笔记"的Web应用程序,让用户能够记录感兴趣的主题,并在学习每个主题的过程中添加日志条目.
 "学习笔记"的主页对这个网站进行描述,并邀请用户注册或登录. 用户登录后, 就可以创建新主题,添加条目以及阅读已有的条目.
@@ -29,3 +31,10 @@ TEMPLATE =[
 ]
 ```
 误将 `learning_log`写为`learning_logs`导致调试不过关. 因为路径错误, 所以Django找不到错误模板的所在地.
+
+###2.4 关于同时push代码至github和heroku
+因为是在pycharm中创建和开始项目的, 而项目完成后需要部署到heroku中, 同时又要提交到github. 正确的姿势应该是:
+ 1. 使用pycharm,将代码`git add`和`git commit`.
+ 2. 然后先使用`git push heroku master`将代码提交至heroku.
+ 3. 然后再使用pycharm将代码提交至github.
+ 
